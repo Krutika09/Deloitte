@@ -28,3 +28,46 @@ kubectl get nodes
 ![image](https://github.com/user-attachments/assets/b16379b2-7b2d-4183-98dd-f8f623cb7ab7)
 
 ![image](https://github.com/user-attachments/assets/747d190a-b896-47f5-a014-9dd220584627)
+
+## Deployment
+
+**1. To Create Deployment**
+```
+kubectl create deployment myweb --image=vimal13/apache-webserver-php
+```
+**2. View Deployment.**
+```
+kubectl get deplotment
+```
+![image](https://github.com/user-attachments/assets/3513453c-10e3-4c77-ad7d-6b81dd59f65c)
+
+**3. Delete deployment**
+```
+kubectl delete deployment dep-name
+```
+
+## Replicas
+**1. To create replicas**
+```
+kubectl scale deployment myweb --replicas=4
+```
+
+**2. To view replicas**
+```
+kubectl get pods
+```
+![image](https://github.com/user-attachments/assets/82d2c3c6-7cc5-4016-a85a-33ba4cf34658)
+
+
+## Service - LoadBalancer
+**1. Command to create LoadBalncer**
+```
+kubectl expose deployment myweb --type LoadBalancer --port 80 --target-port 80
+```
+**2. View LoadBalancer**
+```
+kubectl get svc/service
+```
+![image](https://github.com/user-attachments/assets/2d7e761c-2dea-4f0b-aedc-32f5cfca2c33)
+
+![image](https://github.com/user-attachments/assets/911c57ba-4129-4172-a508-2338e0b61f10)

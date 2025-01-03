@@ -74,3 +74,7 @@ kubectl get svc/service
 
 
 ![image](https://github.com/user-attachments/assets/d094f7dd-4979-4d1c-b84f-259dbbb864d7)
+
+**If you hit external-ip then you see the page**
+
+![image](https://github.com/user-attachments/assets/4386af37-778a-4297-8e08-8462daac3409)

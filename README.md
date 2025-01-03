@@ -6,6 +6,7 @@
 - Launch Instance & connect that instance.
 
 **Installation of Docker**
+
 **1. To install Docker**
 ```
 yum install docker

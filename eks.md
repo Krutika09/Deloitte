@@ -31,6 +31,10 @@ kubectl get nodes
 
 ![image](https://github.com/user-attachments/assets/911c57ba-4129-4172-a508-2338e0b61f10)
 
+**5. Delete cluster**
+```
+eksctl delete cluster --name=newcluster
+```
 ## Deployment
 
 **1. To Create Deployment**

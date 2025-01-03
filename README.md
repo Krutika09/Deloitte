@@ -1,15 +1,45 @@
 ## Installation of Docker
-1. Create an Ec2 Instance
+**AWS Ec2**
+- Create an Ec2 Instance
+- Select Linux AMI
+- Select your key-pair
+- Launch Instance & connect that instance.
 
-![Screenshot 2025-01-03 170545](https://github.com/user-attachments/assets/0c2b2192-6be2-4e6b-880a-b8d7cab55594)
+**Installation of Docker**
+**1. To install Docker**
+```
+yum install docker
+```
+**2. Start Docker**
+```
+systemctl start docker
+```
+**3. Pull Image from DockerHub**
+```
+ docker pull ubuntu:14.04
+```
+**View images**
+```
+docker images
+```
+![image](https://github.com/user-attachments/assets/239f363c-9988-499e-85d5-49fd4305541f)
 
-2. Select Linux AMI
+**4. Run container from image.**
+```
+docker run -tid ubuntu:14.04
+```
+**View container**
+```
+docker ps
+```
+![image](https://github.com/user-attachments/assets/bdd8da16-6075-4ac5-bd24-9e0ab781f5a3)
 
-![image](https://github.com/user-attachments/assets/e324a0ac-bc19-436f-a56b-fe3d58c7bf16)
-
-3. Select your key-pair
-
-![image](https://github.com/user-attachments/assets/a55bfb6f-ef71-4bfe-883a-bcd511664c7c)
-
-Launch Instance & connect that instance.
-![image](https://github.com/user-attachments/assets/155f4896-a04c-48cf-8d75-231061942923)
+**5. To view details of container**
+```
+docker inspect container-id
+```
+**Copy the ip of container**
+```
+ curl http://172.17.0.3
+```
+![image](https://github.com/user-attachments/assets/e5967374-8d53-4477-bbe5-7cbe0693a1e4)

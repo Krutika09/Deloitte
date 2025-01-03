@@ -29,6 +29,8 @@ kubectl get nodes
 
 ![image](https://github.com/user-attachments/assets/747d190a-b896-47f5-a014-9dd220584627)
 
+![image](https://github.com/user-attachments/assets/911c57ba-4129-4172-a508-2338e0b61f10)
+
 ## Deployment
 
 **1. To Create Deployment**
@@ -70,4 +72,5 @@ kubectl get svc/service
 ```
 ![image](https://github.com/user-attachments/assets/2d7e761c-2dea-4f0b-aedc-32f5cfca2c33)
 
-![image](https://github.com/user-attachments/assets/911c57ba-4129-4172-a508-2338e0b61f10)
+
+![image](https://github.com/user-attachments/assets/d094f7dd-4979-4d1c-b84f-259dbbb864d7)
